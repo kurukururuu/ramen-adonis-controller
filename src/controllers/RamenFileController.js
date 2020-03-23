@@ -21,7 +21,7 @@ class RamenFileController {
         request.multipart.file(
             'file',
             {
-                size: '1mb',
+                size: maxSize,
                 extnames: extnames
             },
             async (file) => {
